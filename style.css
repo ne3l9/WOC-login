@@ -168,19 +168,33 @@ input[type="submit"]:active
 {
   opacity: 0.6;
 }
-@media (max-width: 900px)
-{
-  section span 
-  {
-    width: calc(10vw - 2px);
-    height: calc(10vw - 2px);
+@media (max-width: 768px) {
+  .grid span {
+    width: calc(12.5% - 2px); /* 8 per row */
+    height: calc(12.5% - 2px);
   }
-}
-@media (max-width: 600px)
-{
-  section span 
-  {
-    width: calc(20vw - 2px);
-    height: calc(20vw - 2px);
+
+  .signin {
+    width: 90vw;
+    padding: 30px 20px;
+  }
+
+  .content h2 {
+    font-size: 1.6em;
+  }
+
+  .inputBox input {
+    font-size: 1em;
+    padding: 18px 10px 10px;
+  }
+
+  input[type="submit"] {
+    font-size: 1.1em;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
   }
 }
